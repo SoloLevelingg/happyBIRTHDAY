@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Neha Dii</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Audio Element -->
+    <audio id="birthdayMusic" loop>
+        <source src="element/your-music-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Play audio on user interaction
+        document.body.addEventListener('click', () => {
+            const audio = document.getElementById('birthdayMusic');
+            audio.play();
+        }, { once: true }); // Ensures the audio plays only on the first click
+    </script>
+
+    <!-- Landing Page -->
+    <div class="landing">
+        <h1 class="main-title">Happy Birthday, Neha Dii! 🎉</h1>
+        <p class="subtitle">Wishing you a day filled with joy and love!</p>
+        <p class="subtitle">Click anywhere to start the music!</p>
+    </div>
+
+    <!-- Photos Section -->
+    <section class="photos">
+        <h2>Moments</h2>
+        <div class="photo-grid">
+            <img src="element/photo1.jpg" alt="Photo 1">
+            <img src="element/photo2.jpg" alt="Photo 2">
+            <img src="element/photo3.jpg" alt="Photo 3">
+            <img src="element/photo4.jpg" alt="Photo 4">
+        </div>
+    </section>
+
+    <!-- Poem Section -->
+    <section class="poem">
+        <h2>A Poem for You</h2>
+        <p>
+            Roses are red, violets are blue, <br>
+            There’s no one as special as you. <br>
+            Your smile lights up every room, <br>
+            May your life forever bloom. 🌸
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
